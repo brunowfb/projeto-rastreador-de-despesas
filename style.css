@@ -34,7 +34,7 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 10px;
+    
     width: 100%;
     gap: 5px;
 }
@@ -54,7 +54,7 @@ section {
     font-size: 1em;
     flex: 1;
     min-width: 100px;
-    max-width: 130px;
+    max-width: 150px;
 }
 
 .botao {
@@ -105,7 +105,8 @@ footer {
 
 .produto-item {
     display: flex;
-    justify-content: space-between;/ align-items: center;
+    justify-content: space-between; 
+    align-items: center;
     padding: 10px;
     font-size: 1.5em;
     margin: 5px 0;

@@ -43,8 +43,8 @@ function salvar() {
     const produto = document.getElementById('editar-produto').value;
     const valor = parseFloat(document.getElementById('editar-valor').value);
 
-    if (produto === '' || isNaN(valor)) {
-        alert('Por favor, preencha todos os campos corretamente.');
+    if (produto === '' || isNaN(valor) || valor < 0) {
+        alert('Por favor, preencha todos os campos corretamente e utilize um valor positivo.');
         return;
     }
 
@@ -64,7 +64,7 @@ document.getElementById('fechar-modal').addEventListener('click', function () {
 });
 
 function excluirProduto(button) {
-    const item = button.parentElement.parentElement; // Corrigido para pegar o item correto
+    const item = button.parentElement.parentElement; 
     item.remove();
     somar();
 }

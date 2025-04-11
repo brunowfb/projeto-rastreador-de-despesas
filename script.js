@@ -4,8 +4,8 @@ function adicionar() {
     const produto = document.getElementById('iproduto').value;
     const valor = parseFloat(document.getElementById('ivalor').value);
 
-    if (produto === '' || isNaN(valor)) {
-        alert('Por favor, preencha todos os campos corretamente.');
+    if (produto === '' || isNaN(valor) || valor < 0) {
+        alert('Por favor, preencha todos os campos corretamente e utilize um valor positivo.');
         return;
     }
 
